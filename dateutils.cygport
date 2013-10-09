@@ -1,15 +1,17 @@
 NAME="dateutils"
-VERSION=0.2.3
+VERSION=0.2.5
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="Date manipulation utilities"
 DESCRIPTION="Dateutils are a bunch of tools that revolve around fiddling with
 dates and times in the command line with a strong focus on use cases that arise
 when dealing with large amounts of financial data."
-HOMEPAGE="http://hrop.fresse.org/dateutils/"
-SRC_URI="https://github.com/downloads/hroptatyr/${NAME}/${NAME}-${VERSION}.tar.xz"
+HOMEPAGE="http://www.fresse.org/dateutils/"
+SRC_URI="https://bitbucket.org/hroptatyr/dateutils/downloads/${NAME}-${VERSION}.tar.xz"
 
 PKG_NAMES="dateutils libdut-devel"
 dateutils_CONTENTS="usr/bin/ usr/share/"
 libdut_devel_SUMMARY="${SUMMARY% *} library (development)"
 libdut_devel_CONTENTS="usr/include/ usr/lib/"
+
+DIFF_EXCLUDES="libtool.m4 lt*.m4 ltmain.sh"
