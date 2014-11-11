@@ -10,6 +10,7 @@ HOMEPAGE="http://www.fresse.org/dateutils/"
 SRC_URI="https://bitbucket.org/hroptatyr/dateutils/downloads/${NAME}-${VERSION}.tar.xz"
 
 PKG_NAMES="dateutils libdut-devel"
+dateutils_REQUIRES="tzcode"
 dateutils_CONTENTS="usr/bin/ usr/share/"
 libdut_devel_SUMMARY="${SUMMARY% *} library (development)"
 libdut_devel_CONTENTS="usr/include/ usr/lib/"
