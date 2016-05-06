@@ -1,5 +1,5 @@
 NAME="dateutils"
-VERSION=0.2.5
+VERSION=0.3.5
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="Date manipulation utilities"
@@ -9,10 +9,6 @@ when dealing with large amounts of financial data."
 HOMEPAGE="http://www.fresse.org/dateutils/"
 SRC_URI="https://bitbucket.org/hroptatyr/dateutils/downloads/${NAME}-${VERSION}.tar.xz"
 
-PKG_NAMES="dateutils libdut-devel"
-dateutils_REQUIRES="tzcode"
-dateutils_CONTENTS="usr/bin/ usr/share/"
-libdut_devel_SUMMARY="${SUMMARY% *} library (development)"
-libdut_devel_CONTENTS="usr/include/ usr/lib/"
+REQUIRES="tzdata"
 
 DIFF_EXCLUDES="libtool.m4 lt*.m4 ltmain.sh"
