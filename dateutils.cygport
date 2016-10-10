@@ -1,5 +1,5 @@
 NAME="dateutils"
-VERSION=0.3.5
+VERSION=0.4.0
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="Date manipulation utilities"
